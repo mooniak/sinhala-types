@@ -1,0 +1,10 @@
+url : /sinhala-types
+baseurl : /sinhala-types
+category-list: [cold-metal, hot-metal, photo-composition, digital]
+
+
+# Setup
+title:               Sinhala Types
+tagline:             'Collecting Sinhala types'
+description:         'A collection of Sinhala types for comparison and study.'
+paginate:            5

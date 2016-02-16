@@ -1,0 +1,9 @@
+<div class="masthead">
+    <a href="{{ site.baseurl }}/" title="Home"> </a>  
+    <h5 class="legnth-btn">
+    <a href="{{ site.baseurl }}/">All</a> | 
+        {% for cat in site.category-list %}
+            <a href="{{ site.baseurl }}/{{ cat }}">{{ cat }}</a>  |  
+        {% endfor %}  <!-- cat -->
+    </h5>
+</div>

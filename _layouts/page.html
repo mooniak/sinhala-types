@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<div class="page">
+    <h1 class="page-title">{{ page.title }}
+    </h1>
+    <a href='#' id='toggle'>Learn More</a>
+    <div style="display:none;" class="toggle">
+        <div class="col-1-2 mobile-col-1-1">
+            This is just a collection of links to libre design software and resources. I built this page to keep track of my tools. You are invited to contribute to and improve.
+        </div>
+
+        <div class="col-1-2 mobile-col-1-1">
+            <li>Free To Copy and Distribute</li>
+            <li></li>
+        </div>
+    </div>
+
+    <table class="tg">
+        <tr>
+            <th class="tg-h21g" colspan="3">{{ page.desc }}</th>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Name</td>
+            <td class="tg-yw4l">{{ page.title }}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Year</td>
+            <td class="tg-yw4l">{{ page.year }}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Designer</td>
+            <td class="tg-yw4l">{{ page.designer }}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Foundry</td>
+            <td class="tg-yw4l">{{ page.foundry }}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Books</td>
+            <td class="tg-yw4l">{{ page.books }}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Notes</td>
+            <td class="tg-yw4l">{{ page.notes }}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Links</td>
+            <td class="tg-yw4l">{{ page.link1 }}</td>
+        </tr>
+        <tr>
+            <td class="tg-yw4l">Spec-Sheet Pdf</a>
+            </td>
+            <td class="tg-yw4l"><a href="{{ site.baseurl }}/{{ page.title }}/{{ page.title }}_spec.pdf">Spec-Sheet Pdf</a>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+    {{ content }}
+</div>
+
+
+
+<p></p>
+
+

@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: /cold-metal/index.html
+---
+  
+{% for cat in site.category-list %}
+
+<ul>
+  {% for page in site.pages %}
+    {% if page.resource == true %}
+    {% if page.categories contains 'cold-metal' %}
+      {% for pc in page.categories %}
+        {% if pc == cat %}
+          <li><a href="/sinhala-types/{{ page.url }}">{{ page.title }} {{ page.desc }}</a></li>
+       <img src="{{ site.baseurl }}/{{ page.title }}/1.jpg">
+
+        
+        {% endif %}   <!-- cat-match-p -->
+      {% endfor %}  <!-- page-category -->
+    {% endif %}   <!-- resource-p -->            
+    {% endif %}   <!-- cat-match-p -->
+  {% endfor %}  <!-- page -->
+    
+</ul>
+{% endfor %}  <!-- cat -->
+
+
+
+
+
+
+
+
+
+
+
