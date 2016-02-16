@@ -1,19 +1,23 @@
 ---
-layout: default
+layout: homepage
 title: Home
 ---
 
 
 {% for cat in site.category-list %}
 <ul>
-  {% for page in site.pages %}
+  {% for page in site.pages | sort:"year"  %}
     {% if page.resource == true %}
       {% for pc in page.categories %}
         {% if pc == cat %}
-          <li class="type-list"><a href="/sinhala-types{{ page.url }}">{{ page.title }} / {{ page.year }}</a>
-              {{ page.categories }}
-    <img src="{{ site.baseurl }}/{{ page.title }}/1.jpg">
-    </li>
+        <li class="type-list">
+        <a  href="/sinhala-types{{ page.url }}">
+            <img  src="{{ site.baseurl }}/{{ page.title }}/1.jpg">
+        </a>
+        <p class="home-label">
+            <a href="/sinhala-types{{ page.url }}">{{ page.title }}</a> <br />{{ page.year }} , {{ page.categories }}
+        </p>
+        </li>
    
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
