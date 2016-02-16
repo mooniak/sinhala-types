@@ -9,6 +9,7 @@ tag:
 year: "1800"
 designer: "1980"
 foundry: "Linotype"
+city: "Colombo"
 desc:   "ddd"
 books:  "wdw"
 notes:  "c"

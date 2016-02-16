@@ -9,6 +9,7 @@ tag:
 year: "1720"
 designer: "Gabriel Schada"
 foundry: "VOS"
+city: "Galle"
 desc:   "-"
 books:  "-"
 notes:  "-"

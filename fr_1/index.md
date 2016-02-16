@@ -9,6 +9,7 @@ tag:
 year: "1986"
 designer: "Fiona Ross and Linotype Type"
 foundry: "Linotype"
+city: "London"
 desc:   "-"
 books:  "-"
 notes:  "-"
