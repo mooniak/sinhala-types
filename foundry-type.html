@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /cold-metal/index.html
+permalink: /foundry-type/index.html
 ---
   
 {% for cat in site.category-list %}
@@ -8,7 +8,7 @@ permalink: /cold-metal/index.html
 <ul>
   {% for page in site.pages %}
     {% if page.resource == true %}
-    {% if page.categories contains 'cold-metal' %}
+    {% if page.categories contains 'foundry-type' %}
       {% for pc in page.categories %}
         {% if pc == cat %}
           <li><a href="/sinhala-types/{{ page.url }}">{{ page.title }} {{ page.desc }}</a></li>

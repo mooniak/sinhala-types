@@ -2,7 +2,7 @@
 layout: page
 resource: true
 title: wc_1
-categories: [cold-metal]
+categories: [foundry-type]
 tag:
   - tutorials
   - thoughts

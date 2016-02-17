@@ -2,7 +2,7 @@
 layout: page
 resource: true
 title: gk_1
-categories: [cold-metal]
+categories: [foundry-type]
 tag:
   - tutorials
   - thoughts

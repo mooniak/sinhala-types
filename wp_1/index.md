@@ -2,7 +2,7 @@
 layout: page
 resource: true
 title: wp_1
-categories: [cold-metal]
+categories: [foundry-type]
 tag:
   - tutorials
   - thoughts
