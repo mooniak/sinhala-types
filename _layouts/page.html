@@ -5,9 +5,52 @@ layout: default
 <div class="page">
     <h1 class="page-title">{{ page.title }}
     </h1>
-  
-    <div>
+<section class="grid">
+    <div class="grid-img">
+        <img src="single_line.jpg">
+        <div id="vertical-grid-overlay">
+            <a href="#" class="gird-label" onclick="javascript:document.getElementById('vertical-grid-overlay').style.display='none';">clear grid </a>
+        </div>
+        <div id="horizontal-grid-overlay">
+            <a class="gird-label" href="#" onclick="javascript:document.getElementById('horizontal-grid-overlay').style.display='none';">clear grid</a>
+        </div>
+        <div id="both-grid-overlay">
+            <a class="gird-label" href="#" onclick="javascript:document.getElementById('both-grid-overlay').style.display='none';">clear grid </a>
+        </div>
+    </div>
+    <a href="#" class="link" onclick="javascript:document.getElementById('vertical-grid-overlay').style.display='block';">vertical grid</a>
+    <a href="#" class="link" onclick="javascript:document.getElementById('horizontal-grid-overlay').style.display='block';">horizontal grid</a>
+    <a href="#" class="link" onclick="javascript:document.getElementById('both-grid-overlay').style.display='block';">both grids</a>
+</section>
+    
+
+    <div>     
+<section class="focal">
+      <div class="parent">
+        <div class="panzoom">
+            
   <img src="1.jpg">
+        </div>
+      </div>
+          <p class="link">Use the mousewheel to zoom on a focal point</p>
+
+</section>
+      <script>
+        (function() {
+          var $section = $('.focal');
+          var $panzoom = $section.find('.panzoom').panzoom();
+          $panzoom.parent().on('mousewheel.focal', function( e ) {
+            e.preventDefault();
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('zoom', zoomOut, {
+              increment: 0.1,
+              animate: false,
+              focal: e
+            });
+          });
+        })();
+      </script>       
 </div>
     <table class="tg">
         <tr>
@@ -54,7 +97,9 @@ layout: default
     </table>
 
 
+  
 
+</div>
 
 
     {{ content }}
