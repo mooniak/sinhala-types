@@ -8,7 +8,16 @@
     </h5>
     <h5 class="legnth-btn">
     <a href="{{ site.baseurl }}/">paragraphs</a> | 
-          <a href="{{ site.baseurl }}/lines">lines</a>
-      
+          <a href="{{ site.baseurl }}/lines">lines</a> |
+             hide info<input class="button" type="checkbox" name="hide info" value="1" />
+    <script>
+$(".button").click(function() {
+    if($(this).is(":checked")) {
+        $(".metadata").hide();
+    } else {
+        $(".metadata").show();
+    }
+});
+    </script>
     </h5>
 </div>

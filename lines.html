@@ -6,7 +6,7 @@ title: Home
 
 {% for cat in site.category-list %}
 <ul>
-  {% for page in site.pages | sort:"year"  %}
+  {% for page in site.pages | sort:"weight"  %}
     {% if page.resource == true %}
       {% for pc in page.categories %}
         {% if pc == cat %}
@@ -14,7 +14,7 @@ title: Home
         <a  href="/sinhala-types{{ page.url }}">
             <img  src="{{ site.baseurl }}/{{ page.title }}/single_line.jpg">
         </a>
-        <p class="home-label">
+        <p class="home-label metadata">
             <a href="/sinhala-types{{ page.url }}">{{ page.title }}</a> <br />{{ page.year }} , {{ page.categories }}
         </p>
         </li>

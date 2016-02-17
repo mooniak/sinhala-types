@@ -3,7 +3,6 @@ layout: homepage
 title: Home
 ---
 
-
 {% for cat in site.category-list %}
 <ul>
   {% for page in site.pages | sort:"year"  %}
@@ -14,7 +13,7 @@ title: Home
         <a  href="/sinhala-types{{ page.url }}">
             <img  src="{{ site.baseurl }}/{{ page.title }}/1.jpg">
         </a>
-        <p class="home-label">
+        <p class="home-label metadata">
             <a href="/sinhala-types{{ page.url }}">{{ page.title }}</a> <br />{{ page.year }} , {{ page.categories }}
         </p>
         </li>
