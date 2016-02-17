@@ -1,0 +1,30 @@
+---
+layout: default
+title: Home
+---
+
+
+{% for cat in site.category-list %}
+<ul>
+  {% for page in site.pages | sort:"year"  %}
+    {% if page.resource == true %}
+      {% for pc in page.categories %}
+        {% if pc == cat %}
+        <li class="type-list">
+        <a  href="/sinhala-types{{ page.url }}">
+            <img  src="{{ site.baseurl }}/{{ page.title }}/single_line.jpg">
+        </a>
+        <p class="home-label">
+            <a href="/sinhala-types{{ page.url }}">{{ page.title }}</a> <br />{{ page.year }} , {{ page.categories }}
+        </p>
+        </li>
+   
+        {% endif %}   <!-- cat-match-p -->
+      {% endfor %}  <!-- page-category -->
+    {% endif %}   <!-- resource-p -->
+  {% endfor %}  <!-- page -->
+</ul>
+{% endfor %}  <!-- cat -->
+
+
+
