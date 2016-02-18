@@ -1,15 +1,15 @@
 ---
 layout: page
 resource: true
-title: gk_1
-categories: [foundry-type]
+title: rp_1
+categories: [photo-composition]
 tag:
   - tutorials
   - thoughts
-year: "1720"
-designer: "Gabriel Schada"
-foundry: "VOS"
-city: "Galle"
+year: "1980"
+designer: "-"
+foundry: "-"
+city: "-"
 desc:   "-"
 books:  "-"
 notes:  "-"

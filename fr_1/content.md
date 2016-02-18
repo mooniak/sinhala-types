@@ -1,4 +1,3 @@
-<img src="1.jpg">
 
 <h3>10x</h3>
 <img src="./10x/1.jpg"><br />
